@@ -5,6 +5,7 @@ class BookAuthor(models.Model):
     name = models.CharField(verbose_name="Book author name", max_length=20)
     s_name = models.CharField(verbose_name="Book author s_name", max_length=20)
     t_name = models.CharField(verbose_name="Book author t_name", max_length=20, blank=True, null=True)
+    books = models.ForeignKey(to="Book", verbose_name="Book", on_delete=models.CASCADE, blank=True, null=True)
 
     def __str__(self):
         return f"{self.s_name} {str(self.name)[0]}. {str(self.t_name)[0]}."

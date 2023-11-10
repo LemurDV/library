@@ -4,12 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9de04750-e523-4977-ab81-d1c28119a4bb" name="Changes" comment="second awesome commit))))">
+    <list default="true" id="9de04750-e523-4977-ab81-d1c28119a4bb" name="Changes" comment="add filling/cleaning db &amp; little admin for model">
+      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/templates/some.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gunicorn.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/library/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/library/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/library/management/commands/cleardb.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/library/management/commands/cleardb.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/core/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/core/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/core/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/core/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/library/management/commands/filldb.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/library/management/commands/filldb.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/library/migrations/0001_initial.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/library/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/library/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/library/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/library/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements/base.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements/base.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +30,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -44,13 +55,16 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/PyCharmProjects/library/manage.py&quot;
+    &quot;last_opened_file_path&quot;: &quot;D:/PyCharmProjects/library/.env&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\PyCharmProjects\library\apps\templates\src\bootstrap" />
       <recent name="D:\PyCharmProjects\library\apps" />
       <recent name="D:\PyCharmProjects\library" />
     </key>
@@ -68,6 +82,17 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="net.ashald.envfile">
+        <option name="IS_ENABLED" value="true" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" IS_EXECUTABLE="false" />
+          <ENTRY IS_ENABLED="true" PARSER="env" IS_EXECUTABLE="false" PATH=".env" />
+        </ENTRIES>
+      </EXTENSION>
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/manage.py" />
       <option name="PARAMETERS" value="runserver" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -101,12 +126,20 @@
       <option name="project" value="LOCAL" />
       <updated>1698091931200</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add filling/cleaning db &amp; little admin for model">
+      <created>1698536044902</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1698536044902</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first awesome commit" />
     <MESSAGE value="second awesome commit))))" />
-    <option name="LAST_COMMIT_MESSAGE" value="second awesome commit))))" />
+    <MESSAGE value="add filling/cleaning db &amp; little admin for model" />
+    <option name="LAST_COMMIT_MESSAGE" value="add filling/cleaning db &amp; little admin for model" />
   </component>
 </project>

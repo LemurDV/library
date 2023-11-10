@@ -58,7 +58,7 @@ def fill_publishing_houses():
 
 def fill_books():
     bulk_objects = []
-    for book_name, author, p_house in zip(books_names, BookAuthor.objects.all(), PublishingHouse.objects.all()):  # type: str, BookAuthor, PublishingHouse
+    for book_name, author, p_house in zip(books_names, BookAuthor.objects.all(), PublishingHouse.objects.all()):
         bulk_objects.append(Book(name=book_name, author=author, publishing_house=p_house))
     Book.objects.bulk_create(objs=bulk_objects)
     logger.success("Employees was successfully created")
