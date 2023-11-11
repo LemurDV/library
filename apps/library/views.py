@@ -2,7 +2,19 @@ from django.shortcuts import render
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
+from apps.library.models import Book
 
-class ModelAPIView(APIView):
+
+class BooksAPIView(APIView):
     def get(self, request) -> Response:
-        return Response("sosok")
+        books = Book.objects.all()
+        context = {
+            "books": books,
+            "model": [
+                f.name
+                for f in Book._meta.get_fields()
+                if not f.auto_created or f.one_to_one or (f.many_to_one and f.related_model)
+            ]
+        }
+
+        return render(request, 'get_books.html', context)
