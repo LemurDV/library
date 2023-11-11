@@ -1,3 +1,5 @@
 /venv/
 /apps/staticfiles/
-.env
+.env*
+*.env
+*env

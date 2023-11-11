@@ -92,19 +92,19 @@ WSGI_APPLICATION = 'core.wsgi.application'
 #         'NAME': BASE_DIR / 'db.sqlite3',
 #     }
 # }
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'library',
-#         'USER': 'postgres',
-#         'PASSWORD': 'postgres',
-#         'HOST': '127.0.0.1',
-#         'PORT': '5432',
-#     }
-# }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'library',
+        'USER': 'postgres',
+        'PASSWORD': 'postgres',
+        'HOST': '127.0.0.1',
+        'PORT': '5432',
+    }
+}
 
-DATABASES = {"default": dj_database_url.config()}
-DATABASES["default"]["ATOMIC_REQUESTS"] = True
+# DATABASES = {"default": dj_database_url.config()}
+# DATABASES["default"]["ATOMIC_REQUESTS"] = True
 
 
 # Password validation
