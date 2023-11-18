@@ -11,14 +11,14 @@
         <th>{{field}}</th>
       {% endfor %}
     </tr>
-  {% for book in books %}
-    <tr><td>{{book}}</td><td>{{book.author}}</td><td>{{book.publishing_house}}</td></tr>
+  {% for author in authors %}
+    <tr><td>{{author.name}}</td><td>{{author.s_name}}</td><td>{{author.t_name}}</td><td>{{author.books}}</td></tr>
   {% endfor %}
 </table>
 <br>
 <form style="display: inline-block" action="export-db" method="POST">
-    <input type="hidden" name="model" value="book" />
-    <button style="padding: 12px 55px; margin: 6px 0px 12px" class="button" type="submit">Export books into xls</button>
+    <input type="hidden" name="model" value="author" />
+    <button style="padding: 12px 55px; margin: 6px 0px 12px" class="button" type="submit">Export authors into xls</button>
 </form>
 </body>
 </html>
