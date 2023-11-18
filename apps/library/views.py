@@ -1,8 +1,10 @@
 from django.shortcuts import render
+from rest_framework.request import Request
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
 from apps.library.models import Book
+from apps.library.components.abstract_model_manager import AbstractModelManager
 
 
 class BooksAPIView(APIView):
@@ -18,3 +20,9 @@ class BooksAPIView(APIView):
         }
 
         return render(request, 'get_books.html', context)
+
+
+class ExportModelAPIView(APIView):
+    def post(self, request: Request) -> Response:
+        AbstractModelManager().export_model(model_name=request.data.get("model"))
+        return Response()

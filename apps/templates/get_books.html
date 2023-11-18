@@ -15,5 +15,10 @@
     <tr><td>{{book}}</td><td>{{book.author}}</td><td>{{book.publishing_house}}</td></tr>
   {% endfor %}
 </table>
+<br>
+<form style="display: inline-block" action="export-db" method="GET">
+    <input type="hidden" name="model" value="book" />
+    <button style="padding: 12px 55px; margin: 6px 0px 12px" class="button" type="submit">Экспорт Книги в xls</button>
+</form>
 </body>
 </html>
