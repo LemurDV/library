@@ -61,7 +61,6 @@ def fill_books():
     bulk_objects = []
     for book_name, author, p_house in zip(books_names, BookAuthor.objects.all(), PublishingHouse.objects.all()):
         bulk_objects.append(Book(name=book_name, author=author, publishing_house=p_house))
-        logger.success(book_name)
     Book.objects.bulk_create(objs=bulk_objects)
     logger.success("Books was successfully created")
 
@@ -76,6 +75,10 @@ def fill_authors_books():
 def fill_publishing_houses_view():
     bulk_objects = []
     for p_house, book in zip(PublishingHouse.objects.all(), Book.objects.all()):
-        bulk_objects.append(PublishingHouseView(p_house=p_house, books=book))
-    PublishingHouseView.objects.bulk_create(objs=bulk_objects)
+        p_h = PublishingHouseView.objects.create(p_house=p_house)
+        p_h.books.set([book])
+    #     b_o = PublishingHouseView(p_house=p_house)
+    #     b_o.books.set(book)
+    #     bulk_objects.append(b_o)
+    # PublishingHouseView.objects.bulk_create(objs=bulk_objects)
     logger.success("Publishing Houses views was successfully created")

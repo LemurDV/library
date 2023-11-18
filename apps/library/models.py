@@ -29,7 +29,7 @@ class Book(models.Model):
 
 class PublishingHouseView(models.Model):
     p_house = models.ForeignKey(to=PublishingHouse, on_delete=models.CASCADE)
-    books = models.ForeignKey(to=Book, verbose_name="Book", on_delete=models.CASCADE)
+    books = models.ManyToManyField(to=Book, verbose_name="Book")
 
     def __str__(self):
         return self.p_house.name

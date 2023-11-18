@@ -34,8 +34,8 @@ class PublishingHouseAdmin(admin.ModelAdmin):
 
 @admin.register(PublishingHouseView)
 class PublishingHouseViewAdmin(admin.ModelAdmin):
-    list_display = ["p_house", "books"]
+    list_display = ["p_house", "_get_books"]
 
     @staticmethod
     def _get_books(obj):
-        return ", ".join(i for i in obj.books.objects.all())
+        return ", ".join(i.name for i in obj.books.all())
