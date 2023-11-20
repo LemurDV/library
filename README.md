@@ -3,9 +3,9 @@
 This project is only necessary for my deeper learning: <br> python, django, drf and, maybe, async
 
 ----------------------------------------------------
-run in terminal:
-python manage.py makemigrations
-python manage.py migrate
-python manage.py filldb
+run in terminal: <br>
+python manage.py makemigrations <br>
+python manage.py migrate <br>
+python manage.py filldb <br>
 
 runserver
