@@ -6,18 +6,22 @@
 </head>
 <body>
 <table border="1">
-  <tr>
-      {% for field in model %}
+    <tr>
+        {% for field in model %}
         <th>{{field}}</th>
-      {% endfor %}
+        {% endfor %}
     </tr>
-  {% for book in books %}
-    <tr><td>{{book}}</td><td>{{book.author}}</td><td>{{book.publishing_house}}</td></tr>
-  {% endfor %}
+    {% for book in books %}
+    <tr>
+        <td>{{book}}</td>
+        <td>{{book.author}}</td>
+        <td>{{book.publishing_house}}</td>
+    </tr>
+    {% endfor %}
 </table>
 <br>
 <form style="display: inline-block" action="export-db" method="POST">
-    <input type="hidden" name="model" value="book" />
+    <input type="hidden" name="model" value="book"/>
     <button style="padding: 12px 55px; margin: 6px 0px 12px" class="button" type="submit">Export books into xls</button>
 </form>
 </body>
