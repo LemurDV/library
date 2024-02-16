@@ -24,9 +24,6 @@ class BooksAPIView(APIView):
 
 class AuthorsAPIView(APIView):
     def get(self, request) -> Response:
-        for a in BookAuthor.objects.all():
-            t = a.books
-            s = 2
         context = {
             "authors": BookAuthor.objects.all(),
             "model": [

@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9de04750-e523-4977-ab81-d1c28119a4bb" name="Changes" comment="fix database connection...">
+    <list default="true" id="9de04750-e523-4977-ab81-d1c28119a4bb" name="Changes" comment="edit format in get.books.html">
       <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/core/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/core/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/core/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/core/wsgi.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/library/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/library/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/templates/some.html" beforeDir="false" afterPath="$PROJECT_DIR$/apps/templates/get_books.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/templates/get_books.html" beforeDir="false" afterPath="$PROJECT_DIR$/apps/templates/get_books.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +37,9 @@
     &quot;state&quot;: &quot;OPEN&quot;
   }
 }</component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
+  </component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -57,15 +59,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/PyCharmProjects/library/.env&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "D:/PyCharmProjects/library/.env",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\PyCharmProjects\library\apps\templates\src\bootstrap" />
@@ -73,7 +76,7 @@
       <recent name="D:\PyCharmProjects\library" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.runserver">
     <configuration name="runserver" type="PythonConfigurationType" factoryName="Python">
       <module name="library" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -106,6 +109,32 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="scratch" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="library" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$APPLICATION_CONFIG_DIR$/scratches" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$APPLICATION_CONFIG_DIR$/scratches/scratch.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.scratch" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -151,7 +180,77 @@
       <option name="project" value="LOCAL" />
       <updated>1699679156740</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="my first ugly template...">
+      <created>1699684341296</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1699684341296</updated>
+    </task>
+    <task id="LOCAL-00007" summary="some fixes">
+      <created>1700270518230</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1700270518230</updated>
+    </task>
+    <task id="LOCAL-00008" summary="fix view &amp; add one more template">
+      <created>1700345953167</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1700345953167</updated>
+    </task>
+    <task id="LOCAL-00009" summary="edit in readme">
+      <created>1700346173777</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1700346173777</updated>
+    </task>
+    <task id="LOCAL-00010" summary="edit in readme">
+      <created>1700347124519</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1700347124519</updated>
+    </task>
+    <task id="LOCAL-00011" summary="edit in readme">
+      <created>1700511669698</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1700511669698</updated>
+    </task>
+    <task id="LOCAL-00012" summary="fix dockerfile">
+      <created>1708118878777</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1708118878777</updated>
+    </task>
+    <task id="LOCAL-00013" summary="add drf-yasg (swagger for zoomers)">
+      <created>1708119400434</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1708119400434</updated>
+    </task>
+    <task id="LOCAL-00014" summary="micro edit in readme">
+      <created>1708120112384</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1708120112384</updated>
+    </task>
+    <task id="LOCAL-00015" summary="edit format in get.books.html">
+      <created>1708121167819</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1708121167820</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -160,6 +259,14 @@
     <MESSAGE value="add filling/cleaning db &amp; little admin for model" />
     <MESSAGE value="a lot of new features" />
     <MESSAGE value="fix database connection..." />
-    <option name="LAST_COMMIT_MESSAGE" value="fix database connection..." />
+    <MESSAGE value="my first ugly template..." />
+    <MESSAGE value="some fixes" />
+    <MESSAGE value="fix view &amp; add one more template" />
+    <MESSAGE value="edit in readme" />
+    <MESSAGE value="fix dockerfile" />
+    <MESSAGE value="add drf-yasg (swagger for zoomers)" />
+    <MESSAGE value="micro edit in readme" />
+    <MESSAGE value="edit format in get.books.html" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit format in get.books.html" />
   </component>
 </project>
